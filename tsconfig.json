@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "rootDir": ".",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "jsx": "react-jsx", // Use the new JSX transform from React 17+
+        "noEmit": true,
+        "baseUrl": ".",
+        "paths": {
+            // "@/*": ["/*"],       
+            "@static/*": ["static/*"],
+            "@resources/*": ["resources/*"],
+        }
+    },
+    "include": ["./"],
+    "exclude": [
+        "node_modules",
+        "src/Modules/FrontendModule" // Exclude the entire FrontendModule directory
+    ]
+}

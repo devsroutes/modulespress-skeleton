@@ -1,0 +1,70 @@
+// Import variables from the main style
+$accent-green: #4ade80;
+$accent-green-dark: #22c55e;
+$background-dark: #1a1a1a;
+$text-primary: #ffffff;
+$text-secondary: rgba(255, 255, 255, 0.7);
+
+.server-time-container {
+    background: rgba($background-dark, 0.6);
+    border: 1px solid rgba($accent-green, 0.2);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 1rem 0;
+
+    &:hover {
+        border-color: rgba($accent-green, 0.4);
+        box-shadow: 0 6px 12px rgba($accent-green, 0.1);
+    }
+
+    .server-time-loading {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: $text-secondary;
+
+        .loading-spinner {
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgba($accent-green, 0.2);
+            border-top-color: $accent-green;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+    }
+
+    .server-time-error {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: #ff6b6b;
+
+        i {
+            font-size: 1.1rem;
+        }
+    }
+
+    .server-time-display {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: $text-primary;
+
+        i {
+            color: $accent-green;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

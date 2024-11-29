@@ -1,0 +1,20 @@
+{
+  "name": "wordpress-plugin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@modulespress/vite-plugin": "^1.0.0",
+    "@types/node": "^22.7.6",
+    "@vitejs/plugin-react": "^4.3.1",
+    "sass-embedded": "^1.79.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.9"
+  },
+  "dependencies": {
+    "@wordpress/element": "^6.8.0"
+  }
+}
