@@ -1,7 +1,7 @@
 {
     "license": "MIT",
     "require": {
-        "modulespress/framework": "~1.0"
+        "modulespress/framework": ">=0.1.0 <1.0.0"
     },
     "require-dev": {
         "spatie/ignition": "^1.0"
